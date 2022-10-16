@@ -1,46 +1,43 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
-  theme: {
-    extend: {
-      colors: {
-        black: '#191624',
-      },
-      animation: {
-        slideup: 'slideup 1s ease-in-out',
-        slidedown: 'slidedown 1s ease-in-out',
-        slideleft: 'slideleft 1s ease-in-out',
-        slideright: 'slideright 1s ease-in-out',
-        wave: 'wave 1.2s linear infinite',
-        slowfade: 'slowfade 2.2s ease-in-out',
-      },
-      keyframes: {
-        slowfade: {
-          from: { opacity: 0 },
-          to: { opacity: 1 },
+    content: [
+      './pages/**/*.{js,ts,jsx,tsx}',
+      './components/**/*.{js,ts,jsx,tsx}',
+    ],
+    theme: {
+      extend: {
+        width: {
+          1600: '1600px',
+          400: '400px',
+          450: '450px',
+          210: '210px',
+          550: '550px',
+          260: '260px',
+          650: '650px',
         },
-        slideup: {
-          from: { opacity: 0, transform: 'translateY(25%)' },
-          to: { opacity: 1, transform: 'none' },
+        height: {
+          600: '600px',
+          280: '280px',
+          900: '900px',
+          458: '458px',
         },
-        slidedown: {
-          from: { opacity: 0, transform: 'translateY(-25%)' },
-          to: { opacity: 1, transform: 'none' },
+        top: {
+          ' 50%': '50%',
         },
-        slideleft: {
-          from: { opacity: 0, transform: 'translateX(-20px)' },
-          to: { opacity: 1, transform: 'translateX(0)' },
+        backgroundColor: {
+          primary: '#F1F1F2',
+          blur: '#030303',
         },
-        slideright: {
-          from: { opacity: 0, transform: 'translateX(20px)' },
-          to: { opacity: 1, transform: 'translateX(0)' },
+        colors: {
+          primary: 'rgb(22, 24, 35)',
         },
-        wave: {
-          '0%': { transform: 'scale(0)' },
-          '50%': { transform: 'scale(1)' },
-          '100%': { transform: 'scale(0)' },
+        height: {
+          '88vh': '88vh',
+        },
+        backgroundImage: {
+          'blurred-img':
+            "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsaaJ7s4lqcBF4IDROVPzrlL5fexcwRmDlnuEYQenWTt1DejFY5kmYDref2a0Hp2eE4aw&usqp=CAU')",
         },
       },
     },
-  },
-};
+    plugins: [],
+  };
